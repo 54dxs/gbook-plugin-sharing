@@ -2,7 +2,7 @@
   "name": "gbook-plugin-sharing",
   "description": "GBook网站分享插件",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "lodash": "^3.10.1"
   },
@@ -20,49 +20,104 @@
   },
   "gbook": {
     "properties": {
-      "facebook": {
-        "type": "boolean",
-        "default": true,
-        "title": "Facebook"
-      },
-      "twitter": {
-        "type": "boolean",
-        "default": true,
-        "title": "Twitter"
-      },
-      "google": {
-        "type": "boolean",
-        "default": false,
-        "title": "Google"
-      },
-      "weibo": {
-        "type": "boolean",
-        "default": false,
-        "description": "Weibo"
-      },
-      "instapaper": {
-        "type": "boolean",
-        "default": false,
-        "description": "Instapaper"
-      },
-      "vk": {
-        "type": "boolean",
-        "default": false,
-        "description": "VK"
-      },
       "all": {
-        "type": "array",
+        "default": [
+          "douban",
+          "facebook",
+          "twitter",
+          "instapaper",
+          "linkedin"
+        ],
         "items": {
           "type": "string"
         },
-        "default": [
-          "facebook",
-          "google",
-          "twitter",
-          "weibo",
-          "instapaper"
-        ],
+        "type": "array",
         "uniqueItems": true
+      },
+      "qq": {
+        "default": true,
+        "description": "QQ",
+        "type": "boolean"
+      },
+      "qzone": {
+        "default": true,
+        "description": "QQ空间",
+        "type": "boolean"
+      },
+      "weibo": {
+        "default": true,
+        "description": "新浪微博",
+        "type": "boolean"
+      },
+      "douban": {
+        "default": false,
+        "title": "豆瓣",
+        "type": "boolean"
+      },
+      "facebook": {
+        "default": false,
+        "title": "Facebook",
+        "type": "boolean"
+      },
+      "google": {
+        "default": false,
+        "title": "Google",
+        "type": "boolean"
+      },
+      "hatenaBookmark": {
+        "default": false,
+        "description": "はてなブックマーク",
+        "type": "boolean"
+      },
+      "instapaper": {
+        "default": false,
+        "description": "Instapaper",
+        "type": "boolean"
+      },
+      "line": {
+        "default": false,
+        "description": "LINE",
+        "type": "boolean"
+      },
+      "linkedin": {
+        "default": false,
+        "description": "Linkedin",
+        "type": "boolean"
+      },
+      "messenger": {
+        "default": false,
+        "description": "Facebook Messenger",
+        "type": "boolean"
+      },
+      "pocket": {
+        "default": false,
+        "description": "Pocket",
+        "type": "boolean"
+      },
+      "stumbleupon": {
+        "default": false,
+        "description": "StumbleUpon",
+        "type": "boolean"
+      },
+      "twitter": {
+        "default": false,
+        "title": "Twitter",
+        "type": "boolean"
+      },
+      "viber": {
+        "default": false,
+        "description": "Viber",
+        "type": "boolean"
+      },
+      "vk": {
+        "default": false,
+        "description": "VK",
+        "type": "boolean"
+      },
+      "whatsapp": {
+        "default": false,
+        "description": "WhatsApp",
+        "type": "boolean"
       }
     }
   },
